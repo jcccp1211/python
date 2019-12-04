@@ -1,0 +1,9 @@
+def fibonacci(x):
+        if ( x < 2 ):
+            return(x)
+       
+    
+        return fibonacci(x - 2) + fibonacci(x - 1)
+
+for a in range (0,10):
+    print (fibonacci(a))
