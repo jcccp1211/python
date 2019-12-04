@@ -1,0 +1,14 @@
+import random
+
+rule = {
+        "rock":{"scissor":"win","paper":"lose","rock":"draw"},
+        "paper":{"rock":"win","scissors":"lose","paper":"draw"},
+        "scissors":{"paper":"win","rock":"lose","scissors":"draw"}
+        }
+play = True
+while play:
+    player1 = input("enter your move: ")
+    player2 = input("enter your move: ")
+    print(rule[player1][player2])
+    if(player1 or player2) == "stop":
+        play = False
